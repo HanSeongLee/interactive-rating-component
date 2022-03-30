@@ -1,0 +1,79 @@
+.card {
+  max-width: 327px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 15px;
+  padding: 24px 24px 32px 22px;
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #262E38;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 22px;
+    color: #969FAD;
+    margin-bottom: 24px;
+  }
+
+  .ratingForm {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        width: 42px;
+        height: 42px;
+        background: #262E38;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.175px;
+        color: #7C8798;
+        cursor: pointer;
+
+        &.active {
+          color: #FFFFFF;
+          background: #FC7614;
+        }
+      }
+    }
+
+    button[type='submit'] {
+      background: #FC7614;
+      border: none;
+      border-radius: 22.5px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1.86667px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding: 12px 12px;
+      cursor: pointer;
+    }
+  }
+}
