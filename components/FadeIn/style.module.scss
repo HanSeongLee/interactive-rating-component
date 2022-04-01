@@ -1,0 +1,20 @@
+
+@keyframes fadeIn {
+  0% {
+    position: relative;
+    top: var(--offsetY);
+    left: var(--offsetX);
+    opacity: 0;
+  }
+
+  100% {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn both var(--duration) ease-in;
+}
