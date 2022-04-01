@@ -1,3 +1,4 @@
+@import "styles/utils";
 
 .card {
   text-align: center;
@@ -9,8 +10,17 @@
   border-radius: 15px;
   padding: 34px 24px 37px;
 
+  @include media(">desktop") {
+    max-width: 412px;
+    padding: 45px 40px 45px 32px;
+  }
+
   .icon {
     margin-bottom: 24px;
+
+    @include media(">desktop") {
+      margin-bottom: 32px;
+    }
   }
 
   .ratingText {
@@ -21,6 +31,13 @@
     border-radius: 22.5px;
     padding: 5px 12px;
     margin-bottom: 24px;
+
+    @include media(">desktop") {
+      font-size: 15px;
+      line-height: 24px;
+      padding: 4px 20px;
+      margin-bottom: 32px;
+    }
   }
 
   .title {
@@ -29,11 +46,22 @@
     line-height: 30px;
     color: #FFFFFF;
     margin-bottom: 10px;
+
+    @include media(">desktop") {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 7px;
+    }
   }
 
   .description {
     font-size: 14px;
     line-height: 22px;
     color: #969FAD;
+
+    @include media(">desktop") {
+      font-size: 15px;
+      line-height: 24px;
+    }
   }
 }
