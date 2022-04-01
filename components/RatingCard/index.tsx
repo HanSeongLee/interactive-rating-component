@@ -1,4 +1,4 @@
-import React, {HTMLAttributes} from "react";
+import React, {FormEventHandler, HTMLAttributes} from "react";
 import styles from './style.module.scss';
 import RatingForm from "../../containers/RatingForm";
 
@@ -6,9 +6,13 @@ interface IProps extends HTMLAttributes<HTMLDivElement> {
     icon?: string;
     title: string;
     description: string;
+    onSubmit?: FormEventHandler;
 };
 
-const RatingCard: React.FC<IProps> = ({icon, title, description, ...props}) => {
+const RatingCard: React.FC<IProps> = ({
+                                          icon, title, description,
+                                          onSubmit, ...props
+                                      }) => {
     return (
         <div className={styles.card}
              {...props}
@@ -27,6 +31,9 @@ const RatingCard: React.FC<IProps> = ({icon, title, description, ...props}) => {
                 </p>
                 <RatingForm className={styles.ratingForm}
                             activeClassName={styles.active}
+                            onSubmit={onSubmit}
+                            min={1}
+                            max={5}
                 />
             </div>
         </div>
