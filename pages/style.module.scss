@@ -5,4 +5,9 @@
   justify-content: center;
   height: 100vh;
   min-height: 467px;
+
+  .title {
+    position: absolute;
+    top: -9999px;
+  }
 }

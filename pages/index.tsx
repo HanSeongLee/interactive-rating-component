@@ -57,6 +57,9 @@ const Home: NextPage = () => {
         </Head>
 
         <main className={styles.main}>
+          <h1 className={styles.title}>
+            Interactive Rating Component
+          </h1>
           <Container>
             <RatingContainer />
           </Container>
