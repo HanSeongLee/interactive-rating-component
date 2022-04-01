@@ -12,7 +12,7 @@ const RatingForm: React.FC<IProps> = ({
                                           activeClassName, defaultValue, min, max,
                                           ...props
                                       }) => {
-    const [value, setValue] = useState(defaultValue ? defaultValue : min);
+    const [value, setValue] = useState(defaultValue);
 
     return (
         <form {...props}>
@@ -37,10 +37,6 @@ const RatingForm: React.FC<IProps> = ({
             </button>
         </form>
     );
-};
-
-RatingForm.defaultProps = {
-    defaultValue: 0,
 };
 
 export default RatingForm;
