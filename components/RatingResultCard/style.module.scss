@@ -12,6 +12,7 @@
 
   @include media(">desktop") {
     max-width: 412px;
+    border-radius: 30px;
     padding: 45px 40px 45px 32px;
   }
 
